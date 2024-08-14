@@ -11,12 +11,12 @@ class HomeController extends Controller
 {
     public function index() {
 
-        $majors = Major::orderBy('id', 'desc')
-        ->limit(8)
+        $majors = Major::inRandomOrder()
+        ->limit(5)
         ->get();
 
         $doctors = Doctor::with('major')
-        ->orderBy('id', 'desc')
+        ->inRandomOrder()
         ->limit(8)
         ->get();
 

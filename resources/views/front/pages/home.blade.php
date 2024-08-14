@@ -1,7 +1,7 @@
 @extends('front.inc.master')
 
 @section('title')
-  VCare - Home page
+  OneHealth - Home page
 @endsection
 
 @section('content')
@@ -22,7 +22,7 @@
 </div>
 <div class="container">
     {{-- majors --}}
-    <h2 class="h1 fw-bold text-center my-4">Majors</h2>
+    <h2 class="h1 fw-bold text-center my-4">Featured Clinics</h2>
     <div class="d-flex flex-wrap gap-4 justify-content-center">
 
         @foreach ( $majors as $major )
@@ -31,14 +31,14 @@
                 alt="major">
             <div class="card-body d-flex flex-column gap-1 justify-content-center">
                 <h4 class="card-title fw-bold text-center">{{ $major->title }}</h4>
-                <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse Doctors</a>
+                <a href="./doctors/index.html" class="btn btn-outline-primary card-button">Browse</a>
             </div>
         </div>           
         @endforeach
   
     </div>
 
-    <h2 class="h1 fw-bold text-center my-4">doctors</h2>
+    <h2 class="h1 fw-bold text-center my-4">Featured Doctors</h2>
     <section class="splide home__slider__doctors mb-5">
         <div class="splide__track ">
             <ul class="splide__list">
