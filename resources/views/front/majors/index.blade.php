@@ -6,35 +6,7 @@
 
 @section('content')
 
-<div
-        class="filteration d-flex gap-3 mb-3 flex-wrap justify-content-center justify-content-lg-start justify-content-md-start">
-        <div class="dropdown">
-            <button class="btn bg-blue btn-primary align-items-center d-flex gap-2 dropdown-toggle"
-                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Filter by
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Alphabetical A-Z</a></li>
-                <li><a class="dropdown-item" href="#">Alphabetical Z-A</a></li>
-                <li><a class="dropdown-item" href="#">Rating</a></li>
-                <li><a class="dropdown-item" href="#">Recent</a></li>
-                <li><a class="dropdown-item" href="#">Distance</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <button class="btn bg-blue btn-primary align-items-center d-flex gap-2 dropdown-toggle"
-                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                City
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Alphabetical A-Z</a></li>
-                <li><a class="dropdown-item" href="#">Alphabetical Z-A</a></li>
-                <li><a class="dropdown-item" href="#">Rating</a></li>
-                <li><a class="dropdown-item" href="#">Recent</a></li>
-                <li><a class="dropdown-item" href="#">Distance</a></li>
-            </ul>
-        </div>
-            
+    <div class="filteration d-flex gap-3 mb-3 flex-wrap justify-content-center justify-content-lg-start justify-content-md-start">
         <div class="input-group">
             <select id="ddFilter" class="btn bg-blue btn-primary align-items-center d-flex gap-2 dropdown-toggle"
             style="margin-right: 20px" name="dropdown">
@@ -46,7 +18,7 @@
                     <option value="4">Recent</option>
                     <option value="5">Distance</option>
             </select>
-            <select id="ddCity" class="btn bg-blue btn-primary align-items-center d-flex gap-2 dropdown-toggle" name="dropdown">
+            <select id="ddCity" class="btn bg-blue btn-primary align-items-center d-flex gap-2 dropdown-toggle" style="margin-right:auto;" name="dropdown">
                 <form method="post" action="?">  
                     <option disabled selected="select">City</option>
                     <option value="1">Alphabetical A-Z</option>
@@ -56,8 +28,7 @@
                     <option value="5">Distance</option>
             </select>
 
-            <input type="text" class="form-controller align-items-center d-flex gap-2" id="search" name="search">
-            </input>
+            <input type="text" class="form-controller align-items-center d-flex gap-2" id="search" name="search" placeholder="Search Clinic..."></input>
         </div>
     </div>
 

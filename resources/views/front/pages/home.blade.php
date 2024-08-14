@@ -95,14 +95,6 @@
     <div class="bottom--left bottom--content bg-blue text-white">
         <h4 class="title">{{ settings('app_title') }}</h4>
         <p>{{ settings('app_description') }}</p>
-        <div class="app-group">
-            <div class="app"><img
-                    src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/55619/_next/static/images/google-play-logo.svg"
-                    alt="">Google Play</div>
-            <div class="app"><img
-                    src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/55619/_next/static/images/apple-logo.svg"
-                    alt="">App Store</div>
-        </div>
     </div>
     <div class="bottom--right bg-blue text-white">
         <img src="{{ 'images/settings/' . settings('app_image') }}" class="img-fluid banner-img">
